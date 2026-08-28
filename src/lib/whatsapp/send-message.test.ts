@@ -151,9 +151,9 @@ describe('sendMessageToConversation — param validation (pre-DB)', () => {
 
 describe('SendMessageError', () => {
   it('carries a machine code and an HTTP status', () => {
-    const e = new SendMessageError('meta_error', 'boom', 502);
+    const e = new SendMessageError('meta_error', 'boom', 400);
     expect(e.code).toBe('meta_error');
-    expect(e.status).toBe(502);
+    expect(e.status).toBe(400);
     expect(e).toBeInstanceOf(Error);
   });
 });

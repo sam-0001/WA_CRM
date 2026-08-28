@@ -178,7 +178,7 @@ export async function PATCH(
             last_submitted_at: new Date().toISOString(),
           })
           .eq('id', id)
-        return NextResponse.json({ error: message }, { status: 502 })
+        return NextResponse.json({ error: message }, { status: 400 })
       }
     }
 
@@ -299,7 +299,7 @@ export async function DELETE(
         })
       } catch (e) {
         const message = e instanceof Error ? e.message : 'Meta delete failed.'
-        return NextResponse.json({ error: message }, { status: 502 })
+        return NextResponse.json({ error: message }, { status: 400 })
       }
     }
 
