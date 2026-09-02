@@ -271,6 +271,7 @@
       "noApprovedTemplates": "No approved templates",
       "noApprovedTemplatesHint": "Approve a template in Meta WhatsApp Manager, then sync it from Settings → Templates.",
       "preview": "Preview",
+      "headerMediaUrl": "Media URL",
       "headerValuePlaceholder": "Value for the header variable",
       "bodyValuePlaceholder": "Value for {val}",
       "urlSuffixValuePlaceholder": "URL suffix value",
