@@ -664,6 +664,7 @@ export function MessageThread({
       values: {
         body: string[];
         headerText?: string;
+        headerMediaUrl?: string;
         buttonParams?: Record<number, string>;
       },
     ) => {
